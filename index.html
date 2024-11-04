@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure Overview</title>
+    
+<link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
+* {
+    box-sizing: border-box; /* Ensures padding and borders don't affect element width */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light gray text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e; /* Header background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Deeper shadow for header */
+    transition: background-color 0.3s; /* Smooth transition for header background */
+}
+
+header:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #00ffcc; /* Bright cyan for the header */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column; /* Stack categories vertically */
+    gap: 20px; /* Increased space between items */
+    width: 100%;
+    max-width: 600px; /* Max width for readability */
+}
+
+.category-item {
+    background-color: #2c2c2c; /* Item background - dark gray */
+    padding: 25px; /* Increased padding for better click area */
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor */
+    border: 2px solid #00ffcc; /* Bright cyan border */
+    position: relative; /* For pseudo-element shadow */
+}
+
+.category-item:hover {
+    background-color: #00ffcc; /* Bright cyan on hover */
+    color: #000; /* Black text on hover */
+    transform: translateY(-5px) scale(1.05); /* Slight upward motion and scale effect */
+    box-shadow: 0 4px 20px rgba(0, 255, 204, 0.6); /* Shadow effect on hover */
+}
+
+.category-item::after {
+    content: ""; /* Pseudo-element for shadow effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2); /* Shadow behind the item */
+    z-index: -1; /* Place behind the item */
+    transition: opacity 0.3s; /* Smooth transition for shadow */
+}
+
+.category-item:hover::after {
+    opacity: 0.5; /* More prominent shadow on hover */
+}
+
+h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Font size for headings */
+}
+
+footer {
+    background-color: #1e1e1e; /* Footer background */
+    color: #f0f0f0; /* Light gray text color */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.8); /* Inverted shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for footer background */
+}
+
+footer:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Data Structure</h1>
+    </header>
+    <main>
+        <div class="category-list">
+            <div class="category-item" onclick="location.href='2darray.html'">
+                <h2>2D Arrays</h2>
+            </div>
+            <div class="category-item" onclick="location.href='graphs.html'">
+                <h2>Graphs</h2>
+            </div>
+            <div class="category-item" onclick="location.href='linkedlist.html'">
+                <h2>Linked List</h2>
+            </div>
+            <div class="category-item" onclick="location.href='queues.html'">
+                <h2>Queues</h2>
+            </div>
+            <div class="category-item" onclick="location.href='recursion.html'">
+                <h2>Recursion</h2>
+            </div>
+            <div class="category-item" onclick="location.href='searching.html'">
+                <h2>Searching Algorithms</h2>
+            </div>
+            <div class="category-item" onclick="location.href='singlearray.html'">
+                <h2>Single Dimension Arrays</h2>
+            </div>
+            <div class="category-item" onclick="location.href='sorting.html'">
+                <h2>Sorting Algorithms</h2>
+            </div>
+            <div class="category-item" onclick="location.href='stack.html'">
+                <h2>Stacks</h2>
+            </div>
+            <div class="category-item" onclick="location.href='string.html'">
+                <h2>Strings</h2>
+            </div>
+            <div class="category-item" onclick="location.href='trees.html'">
+                <h2>Trees</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Stylish Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
